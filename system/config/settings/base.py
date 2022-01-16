@@ -34,9 +34,11 @@ LOCAL_APPS = (
     'apps.posts',
 )
 
-THRID_PARTY_APPS = ()
+THRID_PARTY_APPS = (
+    'rest_framework',
+)
 
-INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THRID_PARTY_APPS
+INSTALLED_APPS = list(DJANGO_APPS + LOCAL_APPS + THRID_PARTY_APPS)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

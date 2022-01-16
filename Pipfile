@@ -10,6 +10,9 @@ python-dotenv = "*"
 djangorestframework = "*"
 
 [dev-packages]
+django-debug-toolbar = "*"
+django-extensions = "*"
+ptpython = "*"
 
 [requires]
 python_version = "3.8"
