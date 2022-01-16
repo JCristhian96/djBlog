@@ -30,12 +30,15 @@ DJANGO_APPS = (
 )
 
 LOCAL_APPS = (
+    'apps.users',
     'apps.core',
     'apps.posts',
 )
 
 THRID_PARTY_APPS = (
     'rest_framework',
+    'drf_yasg',
+    'rest_framework_simplejwt',
 )
 
 INSTALLED_APPS = list(DJANGO_APPS + LOCAL_APPS + THRID_PARTY_APPS)
@@ -110,3 +113,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Model USer
+AUTH_USER_MODEL = 'users.User'
+
+# Rest Framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}

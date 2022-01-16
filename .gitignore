@@ -15,6 +15,9 @@ system/config/db.sqlite3
 system/apps/**/migrations/*.*
 !system/apps/**/migrations/__init__.*
 
+# Fixtures
+system/apps/**/fixtures/*.*
+
 # Media Files
 system/media/
 
