@@ -1,0 +1,20 @@
+# VSCode Settings
+workspace.code-workspace
+.vscode
+
+# Cache Python
+*.pyc
+
+# Enviorements
+system/.env
+
+# Database
+system/config/db.sqlite3
+
+# Migrations
+system/apps/**/migrations/*.*
+!system/apps/**/migrations/__init__.*
+
+# Media Files
+system/media/
+
